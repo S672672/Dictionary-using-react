@@ -46,7 +46,7 @@ export default function App() {
         {error && <h3 className="error">{error}</h3>}
         {wordData && (
           <Words
-            word={inputWord}
+            word={wordData.word}
             partOfSpeech={wordData.meanings[0].partOfSpeech}
             phonetic={wordData.phonetic}
             definition={wordData.meanings[0].definitions[0].definition}
