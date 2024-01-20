@@ -35,7 +35,7 @@ export default function App() {
       <div className="search-box">
         <input
           type="text"
-          placeholder="Type the word here.."
+          placeholder="Search here"
           value={inputWord}
           onChange={(e) => setInputWord(e.target.value)}
         />
