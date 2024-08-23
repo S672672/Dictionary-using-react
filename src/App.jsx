@@ -10,10 +10,9 @@ export default function App() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [errorLoading, setErrorLoading] = useState(false);
-  const [backgroundImage, setBackgroundImage] = useState('./src/assets/image.jpg'); // Default image
+  const [backgroundImage, setBackgroundImage] = useState('./src/assets/image.jpg');
 
   useEffect(() => {
-    // Set the default image when the component mounts
     setBackgroundImage('./src/assets/image.jpg');
   }, []);
 
@@ -44,7 +43,7 @@ export default function App() {
 
   return (
     <div className={`wholebody ${errorLoading ? 'error-state' : ''}`}>
-      <h1 className="text-4xl font-bold m-5 text-black">Dictionary App</h1>
+      <h1 className="text-4xl font-bold m-5 text-purple-700">Dictionary</h1>
       <div className={`content ${errorLoading ? 'error-state' : ''}`} style={{ backgroundImage: `url(${backgroundImage})` }}>
         <div className="search-box">
           <input
